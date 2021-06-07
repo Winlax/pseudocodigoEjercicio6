@@ -1,0 +1,37 @@
+Algoritmo Ejercicio6
+	
+	x = 1
+	sumaMayores = 0
+	sumaMenores = 0
+	total = 100
+	Adultos = 0
+	Menores = 0
+	
+	Mientras  x < total + 1 Hacer
+		
+		Escribir "Ingresa tu edad"
+		leer edad
+		
+		si edad >= 25 Entonces
+			
+			sumaMayores = sumaMayores + edad
+			Adultos = Adultos + 1
+			
+		SiNo 
+			
+			sumaMenores = sumaMenores + edad
+			Menores = Menores + 1
+			
+		FinSi
+		
+		x = x + 1
+		
+	FinMientras
+	
+	PromMayores = sumaMayores / Adultos
+	PromMenores = sumaMenores / Menores
+	
+	escribir "El promedio de edades mayores o iguales a 25 años es: " PromMayores
+	escribir "El promedio de edades menores a 25 años es: " PromMenores
+	
+FinAlgoritmo
